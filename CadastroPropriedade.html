@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-08">
+        <link href="css.css" type="text/css" rel="stylesheet"/>
+        <title>Cadastro de Pessoas</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <div class="gridFiguras">
+            <img src="imagem4.png" width="266" height="200"/>
+            <img src="imagem2.png" width="266" height="200"/>
+            <img src="imagem1.png" width="266" height="200"/>
+            <img src="imagem3.png" width="266" height="200"/>
+            <img src="imagem6.png" width="266" height="200"/>
+        </div>
+       <div>
+        <h1 >Novo Cadastro</h1>
+        </div>
+        <form name="meu_form">
+           
+          
+            <div class="classeDiv">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nomeid" placeholder="Nome da Propriedade" required="required" name="nome" />
+                <label for="Vcpf">CNPJ: </label>
+                <input type="cpf" id="cpfid" placeholder="999999999-99" required="required" name="Vcpf" />
+            </div>
+            
+            <div class="classeDiv">
+                <label for="fone">Fone: </label>
+                <input type="tel" id="foneid" placeholder="(99)999999999" required="required" name="fone" />
+                <label for="email">Email: </label>
+                <input type="email" id="emailid" placeholder="email@gmail.com" required="required" name="email" />
+                
+            </div>
+            <div class="classeDiv">
+                <label for="rua">Rua: </label>
+                <input type="text" id="ruaid" placeholder="Logradouro" required="required" name="rua" />
+                <label for="numero">Número: </label>
+                <input type="text" id="numeroid" placeholder="Numero" required="required" name="numero" />
+                <label for="bairro">Bairro: </label>
+                <input type="text" id="bairroid" placeholder="Bairro" required="required" name="bairro" >
+                
+            </div>
+            <div class="classeDiv">
+                <label for="cep">Cep: </label>
+                <input type="text" id="cepid" placeholder="00000-000" required="required" name="cep" />
+                <label for="cidade">Cidade: </label>
+                <input type="text" id="cidadeid" placeholder="Cidade" required="required" name="cidade" />
+                <label for="estado">Estado: </label>
+                <select type="text" id="estadoid" placeholder="Estado" required="required" name="Estado" class="from-control">
+                    <option selected="" value="">Selecione o Estado</option>
+                    <option value="Acre">AC</option>
+                    <option value="Alagoas">AL</option>
+                    <option value="Amapá">AP</option>
+                    <option value="Amazonas">AM</option>
+                    <option value="Bahia">BA</option>
+                    <option value="Ceará">CE</option>
+                    <option value="Distrito Federal">DF</option>
+                    <option value="Espírito Santo">ES</option>
+                    <option value="Goiás">GO</option>
+                    <option value="Maranhão">MA</option>
+                    <option value="Mato Grosso">MT</option>
+                    <option value="Mato Grosso do Sul">MS</option>
+                    <option value="Minas Gerais">MG</option>
+                    <option value="Pará">PA</option>
+                    <option value="Paraíba">PB</option>
+                    <option value="Paraná">PR</option>
+                    <option value="Pernambuco">PE</option>
+                    <option value="Piauí">PI</option>
+                    <option value="Rio de Janeiro">RJ</option>
+                    <option value="Rio Grande do Norte">RN</option>
+                    <option value="Rio Grande do Sul">RS</option>
+                    <option value="Rondônia">RO</option>
+                    <option value="Roraima">RR</option>
+                    <option value="Santa Catarina">SC</option>
+                    <option value="São Paulo">SP</option>
+                    <option value="Sergipe">SE</option>
+                    <option value="Tocantins">TO</option>                  
+                    
+                </select>
+            </div>
+            
+        </form>
+        <div>
+            <br>
+            <center>
+            <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+            </center>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
